@@ -1,4 +1,5 @@
-import java.util.*;;
+
+import java.util.*;
 
 class Node {
     Node left;
@@ -11,7 +12,7 @@ class Node {
     }
 }
 
-class Main {
+class Inorder_to_levelorder_bst {
     public static Node buildTree(int st, int lt, int[] arr) {
         if (st > lt) { // Fixed condition
             return null;
@@ -23,7 +24,7 @@ class Main {
         return node;
     }
 
-    public static void Inorder_to_levelorder_bst(String[] args) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr = new int[n];
